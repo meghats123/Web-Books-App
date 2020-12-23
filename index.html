@@ -13,33 +13,48 @@
                 <h2>BOOKS APP</h2>
     <table class="table table-borderless">
         <tr>
-            <td>Book Nmae</td>
-            <td><input type="text" class="form-control"></td>
+            <td>Book Name</td>
+            <td><input id="bname" type="text" class="form-control"></td>
         </tr>
         <tr>
             <td>Author</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input id="author" type="text" class="form-control"></td>
         </tr>
         <tr>
             <td>Publisher</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input id="bpublisher" type="text" class="form-control"></td>
         </tr>
         <tr>
             <td>Distributor</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input id="distributor" type="text" class="form-control"></td>
         </tr>
         <tr>
             <td>Price</td>
-            <td><input type="text" class="form-control"></td>
+            <td><input id="price" type="text" class="form-control"></td>
         </tr>
         <tr>
             <td></td>
-            <td><Button class="btn btn-warning">SUBMIT</Button></td>
+            <td><Button onclick="mybuttonclick()" class="btn btn-warning">SUBMIT</Button></td>
         </tr>
     </table>
             </div>
         </div>
     </div>
+    <script>
+        function mybuttonclick(){
+            var getBookName=document.getElementById("bname").value
+            var getAuthor=document.getElementById("author").value
+            var getPublisher=document.getElementById("bpublisher").value
+            var getDistributor=document.getElementById("distributor").value
+            var getPrice=document.getElementById("price").value
+            console.log(getBookName)
+            console.log(getAuthor)
+            console.log(getPublisher)
+            console.log(getDistributor)
+            console.log(getPrice)
+
+        }
+    </script>
     
 </body>
 </html>
